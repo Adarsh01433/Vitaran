@@ -44,10 +44,12 @@ const [isVisible , setVisible] = useState(false)
      <Path fill= "url(#grad)" d= {svgPath}/>
 
      </Svg>
-     {isVisible && (<QRGenerateModal
-      visible = {isVisible}
-      onClose = {()=>setVisible(false)}
-     />)}
+     
+     {isVisible && (
+        <QRGenerateModal
+        visible = {isVisible}
+        onClose={()=>setVisible(false)}/>
+     )}
 
     </View>
   )
