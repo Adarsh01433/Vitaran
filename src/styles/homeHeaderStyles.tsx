@@ -10,10 +10,10 @@ export const homeHeaderStyles = StyleSheet.create({
         zIndex: 4,
     },
     curve: {
-        position: 'absolute',
-        bottom: -screenHeight * 0.09,
-        zIndex: 3,
-        width: '100%',
+         position: 'absolute',
+  bottom: -screenHeight * 0.09, // ❌ negative value
+  zIndex: 3,
+  width: '100%',
     },
     logo: {
         width: screenWidth * 0.4,
