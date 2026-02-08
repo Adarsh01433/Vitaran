@@ -7,6 +7,7 @@ import { navigationRef } from '../utils/NavigationUtil';
 import HomeScreen from '../screens/HomeScreen';
 import SendScreen from '../screens/SendScreen';
 import ConnectionScreen from '../screens/ConnectionScreen';
+import RecieveScreen from '../screens/RecieveScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ const Navigation:FC = () => {
             <Stack.Screen name='HomeScreen' component={HomeScreen}/>
             <Stack.Screen name='ConnectionScreen' component={ConnectionScreen}/>
             <Stack.Screen name='SendScreen' component={SendScreen}/>
+            <Stack.Screen name='RecieveScreen' component={RecieveScreen}/>
         </Stack.Navigator>
     </NavigationContainer>
   )
