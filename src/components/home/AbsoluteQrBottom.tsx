@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Icon from '../global/Icon';
 import { navigate } from '../../utils/NavigationUtil';
 import { bottomTabStyles } from '../../styles/bottomTabStyle';
+import QRScannerModal from '../modals/QRScannerModal';
 
 const AbsoluteQrBottom = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,10 @@ const AbsoluteQrBottom = () => {
         size={24}/>
     </TouchableOpacity>
    </View>
-   
+
+   {isVisible && (
+    <QRScannerModal visible= {isVisible} onClose={()=> setIsVisible(false)}/>
+   )}
    </>
   )
 }
