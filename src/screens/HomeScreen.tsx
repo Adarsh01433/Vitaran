@@ -5,6 +5,7 @@ import HomeHeader from '../components/home/HomeHeader'
 import Misc from '../components/home/Misc'
 import Options from '../components/home/Options'
 import SendRecieveButton from '../components/home/SendRecieveButton'
+import AbsoluteQrBottom from '../components/home/AbsoluteQrBottom'
 
 
 
@@ -18,6 +19,7 @@ const HomeScreen = () => {
        <Options  />
        <Misc/>
      </ScrollView>
+     <AbsoluteQrBottom/>
     </View>
   )
 }

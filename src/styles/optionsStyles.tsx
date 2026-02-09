@@ -6,7 +6,7 @@ export const optionStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: "space-between",
         padding: 15,
-        shadowOffset: { width: 1, height: 1 },
+       shadowOffset: { width: 1, height: 1 },
         shadowOpacity: 0.1,
         elevation: 5,
         shadowRadius: 5,
