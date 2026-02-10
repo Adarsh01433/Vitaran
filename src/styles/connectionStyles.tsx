@@ -99,7 +99,7 @@ export const connectionStyles = StyleSheet.create({
         alignItems: "center"
     },
     fileList: {
-        // height: screenHeight * 0.4,
+         height: screenHeight * 0.4,
     },
     noDataContainer: {
         height: screenHeight * 0.4,

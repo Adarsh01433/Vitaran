@@ -9,8 +9,8 @@ type PlatformType = 'android' | 'ios';
 interface CustomTextProps {
   variant?: Variant;
   fontFamily?:
-    | 'Okara-Bold'
-    | 'Okara-Regular'
+    | 'Okra-Bold'
+    | 'Okra-Regular'
     | 'Okra-Black'
     | 'Okra-Light'
     | 'Okra-Medium';
