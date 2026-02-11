@@ -20,7 +20,7 @@ interface ChunkState {
         setChunkStore:(chunkStore: any)=> void;
         resetChunkStore:()=> void;
         setCurrentChunkSet:(chunkChunkSet:any)=> void;
-        resetCurrentSchunkSet:()=> void;
+        resetCurrentChunkSet:()=> void;
 }
 
 export const useChunkStore = create<ChunkState>(set=> ({
@@ -29,5 +29,5 @@ export const useChunkStore = create<ChunkState>(set=> ({
     setChunkStore : chunkStore=> set(()=>({chunkStore})),
     resetChunkStore:()=> set(()=> ({chunkStore : null})),
     setCurrentChunkSet: currentChunkSet => set(()=> ({currentChunkSet})),
-    resetCurrentSchunkSet:()=>set(()=> ({currentChunkSet: null})),
+    resetCurrentChunkSet:()=>set(()=> ({currentChunkSet: null})),
 }));
